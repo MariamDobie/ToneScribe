@@ -8,11 +8,11 @@ This project was created by a college software engineering student to explore th
 
 ## 🚀 Features
 
-- ✍️ **Text Input** — Users can paste or type in any block of text  
-- 🧠 **Tone Analysis** — AI processes the text and returns an interpretation of its tone (e.g., professional, emotional, friendly, passive-aggressive)  
-- 📊 **Real-Time Feedback** — See immediate results with a clean and intuitive UI  
-- 🎨 **Responsive Design** — Works across desktops, tablets, and mobile devices  
-- 🔮 **Expandable** — Future plans include tone-suggestion tools and editing recommendations
+- **Text Input** — Users can paste or type in any block of text  
+- **Tone Analysis** — AI processes the text and returns an interpretation of its tone (e.g., professional, emotional, friendly, passive-aggressive)  
+- **Real-Time Feedback** — See immediate results with a clean and intuitive UI  
+- **Responsive Design** — Works across desktops, tablets, and mobile devices  
+- **Expandable** — Future plans include tone-suggestion tools and editing recommendations
 
 ---
 
@@ -32,10 +32,10 @@ As a college student studying software engineer, I wanted a project that went be
 
 ## 🔭 What's Next
 
-- ✨ Let users suggest alternate phrasings to shift tone  
-- 🌐 Add language support for multiple languages  
-- 💾 Save and compare past tone checks  
-- 🧪 Run sentiment/tone tests on social media content
+- Let users suggest alternate phrasings to shift tone  
+- Add language support for multiple languages  
+- Save and compare past tone checks  
+- Run sentiment/tone tests on social media content
 
 ---
 
