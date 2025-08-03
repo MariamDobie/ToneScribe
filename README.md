@@ -39,7 +39,7 @@ As a college student studying software engineer, I wanted a project that went be
 
 ---
 
-## 📂 Getting Started
+## Getting Started
 
 To run this project locally:
 
