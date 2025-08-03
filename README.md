@@ -44,7 +44,7 @@ As a college student studying software engineer, I wanted a project that went be
 To run this project locally:
 
 ```bash
-git clone https://github.com/your-username/ToneScribe.git
+git clone https://github.com/MariamDobie/ToneScribe.git
 cd ToneScribe
 npm install
 npm start
