@@ -1,17 +1,9 @@
-import React from "react"
-import useState from "react" //A hook, a built-in function that allow your components to store user input
+//import {useState} from "react" //A hook, a built-in function that allow your components to store user input
+import Navbar from "./components/Navbar";
 
 function App() {
-  const [userText, setUserText] = useState("") //
-  const [tone, setTone] = useState("") //
-
-
-
   return (
-    <>
-      <h1>Welcome to TypeScribe App!</h1>
-    </>
+    <Navbar/>
   )
 }
-
-export default App
+export default App;
