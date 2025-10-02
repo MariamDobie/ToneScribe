@@ -1,11 +1,11 @@
 import reactDOM from "react";
 
-function textBox(){
+function TextBox(){
     return(
         <body>
-            <h1>textBox</h1>
+            <h1>TextBox Hi</h1>
         </body>
     )
 }
 
-export default textBox;
+export default TextBox;
