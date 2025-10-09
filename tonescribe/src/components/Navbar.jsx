@@ -1,5 +1,3 @@
-import reactDOM from "react";
-
 function Navbar(){
     return(
         <header>

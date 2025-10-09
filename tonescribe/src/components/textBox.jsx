@@ -1,11 +1,11 @@
-import reactDOM from "react";
-
 function TextBox(){
     return(
-        <body>
-            <h1>TextBox Hi</h1>
-        </body>
-    )
+        <section className = "textbox">
+            <h3>Enter your text here!</h3>
+            <textarea placeholder="Type or paste your text..." rows = "6" cols = "50"></textarea>
+            <button>Analyze Tone</button>
+        </section>
+    );
 }
 
 export default TextBox;
