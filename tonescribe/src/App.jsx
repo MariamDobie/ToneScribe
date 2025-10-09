@@ -1,18 +1,18 @@
-import {useState} from "react" //A hook, a built-in function that allow your components to store user input
 import Navbar from "./components/Navbar";
 import TextBox from "./components/TextBox";
 import Footer from "./components/Footer";
+//import "./App.css"
 
 
 function App() {
   return (
-    <>
+    <div className = "app">
       <Navbar />
-      <main>
+      <main className="main-content">
         <TextBox />
       </main>
       <Footer/>
-    </>
+    </div>
   )
 }
 
