@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar";
 import TextBox from "./components/TextBox";
 import Footer from "./components/Footer";
-//import "./App.css"
+import "./App.css";
 
 
 function App() {

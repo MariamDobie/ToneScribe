@@ -1,0 +1,40 @@
+/* default spacing */
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #ffffe65e;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* main app style */
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar style*/
+.navbar {
+    background-color:beige;
+    color:#333;
+    padding: 0.75rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* space out logo and nav links */
+}
+
+.logo {
+    font-size: 1.6rem;
+}
+
+.nav-links{
+    list-style: none;    /* removes list bullet points */
+    display: flex;
+    gap: 9rem;
+}
