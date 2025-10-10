@@ -5,10 +5,10 @@ function TextBox(){
 
     return(
         <section className = "textbox">
-            <h3>Enter your text here!</h3>
-            <textarea placeholder="Type or paste your text..." rows="6" cols="50" value={text} onChange={(event) => setText(event.target.value)}></textarea> 
-            {/* for now a button that repeats what was typed */}
-            <button onClick = {() => alert ("You Typed: " + text )}> Analyze Tone</button>
+            <h2>Analyze Your Text</h2>
+            <textarea placeholder="Type or paste your text..." rows="8" cols="50" value={text} onChange={(event) => setText(event.target.value)}></textarea> 
+            <button className = "analyze-btn"> Analyze Tone</button>
+            
         </section>
     );
 }
