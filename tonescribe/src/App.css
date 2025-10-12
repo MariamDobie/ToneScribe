@@ -5,12 +5,11 @@
     box-sizing: border-box;
 }
 
+
 body{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    /* background-color:#157bc306; */
-    /* background-color: #fbfbf8; */
-    background-color: #ffffff;
-    color: #333;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: #F8FAFC; /* very light gray background */
+    color: #1A202C; /* dark gray for text */
     line-height: 1.6;
 }
 
@@ -23,29 +22,32 @@ body{
 
 /* Navbar style*/
 .navbar {
-    background-color: #8326d4fd;
-    color:#ffffff;
-    padding: 0.75rem 2rem;
+    background-color: white;
+    color:#1A202C;
+    padding: 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;  /* space out logo and nav links */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-bottom:1px solid var(#E2E8F0);
     
 }
 
 .logo {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #5D3FD3;
 }
 
 .nav-links{
     list-style: none;    /* removes list bullet points */
     display: flex;
-    gap: 9rem;
-    font-size: larger;
+    gap: 4rem;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: white;
+    color:#1A202C;
     transition: opacity 0.2s;
     
 }
