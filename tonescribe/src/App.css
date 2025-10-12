@@ -7,7 +7,9 @@
 
 body{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: #ffffe65e;
+    /* background-color:#157bc306; */
+    /* background-color: #fbfbf8; */
+    background-color: #ffffff;
     color: #333;
     line-height: 1.6;
 }
@@ -21,22 +23,31 @@ body{
 
 /* Navbar style*/
 .navbar {
-    background-color:beige;
-    color:#333;
+    background-color: #8326d4fd;
+    color:#ffffff;
     padding: 0.75rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;  /* space out logo and nav links */
+    
 }
 
 .logo {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
 }
 
 .nav-links{
     list-style: none;    /* removes list bullet points */
     display: flex;
     gap: 9rem;
+    font-size: larger;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: opacity 0.2s;
+    
 }
 
 /* MAIN CONTENT */
@@ -49,6 +60,7 @@ body{
 }
 
 .textbox{
+    background-color:white;
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -71,23 +83,24 @@ body{
 }
 
 .analyze-btn {
-  margin-top: 1rem;
-  background-color: #4f62d0cd;
-  color: white;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  font-weight: 500;
+    margin-top: 1rem;
+    background-color: #8326d4ea;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .analyze-btn:hover {
-    background-color: #4a5ed1f9;
+    background-color: #8326d4c0;
+
 }
 
 /* Footer */
 .footer {
-    background-color: #ecece691;
+    background-color: #f1f1f1;
     text-align: center;
     padding: 0.75rem;
     font-size: 1rem;
