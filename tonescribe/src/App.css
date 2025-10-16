@@ -7,19 +7,20 @@
 
 :root{
     --primary-color: #5D3FD3;  /* light purple */
-    --primary-dark: #4A2FB5;   /* Darker shade purple for hover */
+    --hover: #4A2FB5;   /* Darker shade purple for hover */
     --background: #F8FAFC;     /* light gray background */
     --surface: #FFFFFF;        /* White cards */
     --text-primary: #1A202C;   /* dark gray text */
     --text-secondary: #718096; /* medium gray smaller text groups */
     --border: #E2E8F0;         /* border color */
+    --textbox-border: #ccc;    /* border color for inner textbox*/
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 body{
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-    background: #F8FAFC; /* very light gray background */
-    color: #1A202C; /* dark gray for text */
+    background: var(--background); /* very light gray background */
+    color: var(--text-primary); /* dark gray for text */
     line-height: 1.6;
 }
 
@@ -32,21 +33,21 @@ body{
 
 /* Navbar style*/
 .navbar {
-    background-color: white;
-    color:#1A202C;
+    background-color: var(--surface); /* var to access color variable in root */
+    color:var(--text-primary);
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;  /* space out logo and nav links */
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    border-bottom:1px solid var(#E2E8F0);
+    border-bottom: 1.5px solid var(--border);
     
 }
 
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #5D3FD3;
+    color: var(--primary-color);
 }
 
 .nav-links{
@@ -57,9 +58,13 @@ body{
 
 .nav-links a {
     text-decoration: none;
-    color:#1A202C;
-    transition: opacity 0.2s;
-    
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color); 
+    cursor: pointer;
 }
 
 /* MAIN CONTENT */
@@ -68,36 +73,52 @@ body{
     flex: 1;
     justify-content: center;
     align-items: flex-start;
-    padding: 4rem 1rem;
+    padding: 5rem 1rem;
 }
 
 .textbox{
-    background-color:white;
-    padding: 2rem;
+    background-color: var(--surface);
+    padding: 2.5rem;
     border-radius: 1rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: var(--shadow);
     width: 100%; 
-    max-width: 600px;
+    max-width: 680px;
     align-items: center;
+    border: 1px solid var(--border);
 }
 
 .textbox h2{
     margin-bottom: 1rem;
+    font-weight: 600;
+    text-align: center;
 }
 
-.textbox textarea{
+.textbox textarea{ /* focusing on inner/direct texboxt input */
     width: 100%;
     padding: 1rem;
-    border: 1px solid #ccc;
     border-radius: 0.5rem;
-    resize: none;  /* removes textbox mouse expansion */
-    font-size: 17px;
+    border: 1px solid var(--textbox-border);
+    resize: vertical; /* allow vertical resize only */
+    min-height: 260px; /* min height when resizing */
+    font-size: 19px;
+    font-family: Open Sans;
+    font-style:normal;
+    line-height: 28px;
+}
+
+
+.textbox textarea:focus {
+    outline: none;
+    border-color: rgba(93, 63, 211, 0.368);
+    box-shadow: 0 0 0 1.5px rgba(93, 63, 211, 0.66);
+
 }
 
 .analyze-btn {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     background-color: #8326d4ea;
-    color: rgb(255, 255, 255);
+    /* background-color: var(--primary-color); */
+    color: white;
     border: none;
     padding: 0.75rem 1.5rem;
     border-radius: 0.5rem;
@@ -107,7 +128,12 @@ body{
 
 .analyze-btn:hover {
     background-color: #8326d4c0;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(93, 63, 211, 0.2);
+}
 
+.analyze-btn:active { /* button is clicked */
+    transform: translateY(0);
 }
 
 /* Footer */
@@ -116,4 +142,26 @@ body{
     text-align: center;
     padding: 0.75rem;
     font-size: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .nav-links {
+        gap: 1.5rem;
+    }
+    
+    .main-content {
+        padding: 2rem 1rem;
+    }
+    
+    .textbox {
+        padding: 1.5rem;
+    }
 }
