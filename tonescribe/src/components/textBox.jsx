@@ -27,7 +27,15 @@ function TextBox(){
         <section className = "textbox">
             <h2>Analyze Your Text</h2>
             <textarea placeholder="Type or paste your text..." rows="8" cols="50" value={text} onChange={(event) => setText(event.target.value)}></textarea> 
-            <button className = "analyze-btn"> Analyze Tone</button>
+            <button className = "analyze-btn" onClick={analyzeTone}> Analyze Tone</button>
+
+            {/* results only show when tone is deteced/matched */}
+            {tone && (
+                <div className = "result">
+                    <h3>Detected Tone: </h3>
+                    <p className ={'tone-${tone}'}></p>
+                </div>
+            )}
         </section>
     );
 }
