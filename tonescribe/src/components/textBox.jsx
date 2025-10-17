@@ -5,19 +5,19 @@ function TextBox(){
     const [tone, setTone] = useState("");
 
     function analyzeTone(){
-        const lowerText = text.toLowerCase();
+        const lowerText = text.toLowerCase(); // creates a copy of user’s text & makes that copy lowercase.
         let detectedTone = "neutral";
 
         if (lowerText.includes("thank") || lowerText.includes("great") || lowerText.includes("happy")) {
-        detectedTone = "positive";
+        detectedTone = "Positive";
         } else if (lowerText.includes("sorry") || lowerText.includes("sad") || lowerText.includes("unfortunately")) {
-        detectedTone = "negative";
+        detectedTone = "Negative";
         } else if (lowerText.includes("urgent") || lowerText.includes("asap")) {
-        detectedTone = "urgent";
+        detectedTone = "Urgent";
         } else if (lowerText.includes("please") || lowerText.includes("regards")) {
-        detectedTone = "formal";
+        detectedTone = "Formal";
         } else if (lowerText.includes("haha") || lowerText.includes("lol")) {
-        detectedTone = "casual / humorous";
+        detectedTone = "Casual / humorous";
         }
 
         setTone(detectedTone);
@@ -33,7 +33,7 @@ function TextBox(){
             {tone && (
                 <div className = "result">
                     <h3>Detected Tone: </h3>
-                    <p className ={'tone-${tone}'}></p>
+                    <p className ={'tone-${tone}'}>{tone}</p>
                 </div>
             )}
         </section>
