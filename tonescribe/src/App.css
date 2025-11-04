@@ -135,7 +135,6 @@ body{
 .analyze-btn:active { /* button is clicked */
     transform: translateY(0);
 }
-
 .result {
   margin-top: 1.5rem;
   padding: 1rem;
